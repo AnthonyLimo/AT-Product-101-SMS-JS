@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
 
 app.post('/incoming-messages', (req, res) => {
     console.log(req.body);
+    message = req.body['text'];
+    // Change the code below to save to a DB or run some
+    // operations based on the message received
+    res.send(message);
 });
 
 app.listen(3000, () => {
