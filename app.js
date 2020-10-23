@@ -41,6 +41,3 @@ const options = {
 
 sms.send(options).then(console.log(response)).catch(console.log(response));
 
-
-
-
